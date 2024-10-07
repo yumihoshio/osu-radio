@@ -1,4 +1,4 @@
-# Current version: Pre-Alpha
+# Current status: Pre-Alpha
 
 Roadmap | Alpha Features & Issues: https://github.com/orgs/Team-BTMC/projects/2
 <br>
@@ -6,7 +6,7 @@ Main Figma Design: [https://www.figma.com/design/tNBJr7TlEsoWsWdAewqoUg](https:/
 
 [//]: # (You can remove the ${\textsf{\color{#f462a3}osu!}}$ if you just want it be osu!radio instead. That color can only work if there's spaces on both side)
 
-# What is ${\textsf{\color{#f462a3}osu!}}$ radio
+# What is osu!radio
 It's an application that play your ${\textsf{\color{#f462a3}osu!}}$ songs!
 
 ![Song Tab](https://github.com/user-attachments/assets/da67b906-1429-4cc1-9087-76026e94b98a "The screen show a UI with all the buttons (Play, Pause, Forward and Rewind, as well as a Seek bar, with 4 songs on the left")
@@ -15,40 +15,53 @@ It's an application that play your ${\textsf{\color{#f462a3}osu!}}$ songs!
 > [!NOTE]
 > To use `git` and `npm`, you need to have [git](https://git-scm.com/) & [node.js](https://nodejs.org/en) installed
 
-`1` | Open the terminal in the directory you want to download osu!radio in. Then do the following command,
+`1` | Open the terminal in the directory you want to download osu!radio in. Then do the 2 following command,
 ```
 git clone https://github.com/Team-BTMC/osu-radio.git
 ```
-> This command will create a copy of the github repositories in that directory
-
-`2` | Then move into that directory with the following command,
 ```
-cd .\osu-radio\
+cd osu-radio
 ```
 
-`3` | Next, do the following command to install the necessary files to run osu!radio
+`2` | Next, install the necessary files to run osu!radio,
 ```
-npm install
+npm ci
 ```
 
-`4` | To start it up, simply fun the following command inside that osu!radio directory
+`A` | For a production (User) startup, 
 ```
 npm run start
 ```
+`B` | For a hot reloading (Dev) launch, 
+```
+npm run dev
+```
+> [!WARNING]
+> If you're planning on reinstalling it, be sure to go to `%appdata%` (`Win + R`, then type that in) and remove the folder `osu-radio-solidjs`
 
 ### Contribution
-You can create a fork of the [main repositories](https://github.com/Team-BTMC/osu-radio) and do PR from there
+> [!TIP]
+> To get started, it's highly recommended to make a [fork](https://github.com/Team-BTMC/osu-radio/fork) of this repository
 
+If you're new to contributing, consider checking out [How to Contribute to an Open Source](https://opensource.guide/how-to-contribute/). It's the best and most simplest guide to understand what contributing really is
+
+If you're more interested in the coding side of things, be sure to read [Good Manners of a PR & Best Practices](https://medium.com/deliveryherotechhub/good-manners-of-a-pull-request-some-best-practices-cb2de3c3aea1), as well as [How to write a perfect PR](https://github.blog/developer-skills/github/how-to-write-the-perfect-pull-request/) 
+
+If you're more interested in contributing as a designer, check out the [Figma](https://www.figma.com/design/tNBJr7TlEsoWsWdAewqoUg/osu!-radio?node-id=0-1&t=aIuThZAj00HcSjM5-1) page
+
+Remember! Contribution come in all shape and size.
 # The Vision
 
 Technologies:
-- ${\textsf{\color{#9feaf9}Electron}}$
-- ${\textsf{\color{#4c84c5}Solid JS}}$
-- ${\textsf{\color{#3178c6}Typescript}}$
+- Electron
+- Solid JS
+- TypeScript
 
-Staying on Electron because it's fine-ish for the time being.
+Main dicussion is in the [BTMC TALENT SERVER](https://discord.gg/mefjfMjV), #prj-osu-radio
 <br>
-The UI will stay web-based for ease of use & cost of being web-based :) I'd like to keep the UI the way it is.
+We'll be staying on Electron for the time being. As for UI, it will stay web-based for ease of use & cost of being web-based :)
 <br>
-If you want to make a change, feel free to suggest the change in PR or Discord DMs / tag me ( ${\textsf{\color{#f9c74f}@Dudu}}$ ) in [BTMC TALENT SERVER](https://discord.gg/mefjfMjV).
+For anything **codes** related (Discussion, PR, Suggestions), contact **@CaptSiro**
+<br>
+For anything **designs** related (UI / UX, Ideas, Suggestions), contact **@Dudu**
 ###### Animations are subject to change (the very few osu!radio has).
